@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/RoboTextViewTheme14sp_robotolightitalic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="90dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/signed_out" />
+
+            <EditText
+                android:id="@+id/loginNameInput"
+                style="@style/RoboEditViewTheme25sp_robotobold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginStart="45dp"
+                android:hint="@string/login_name"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/passwordInput"
+                android:nextFocusForward="@+id/passwordInput"
+                android:nextFocusLeft="@+id/passwordInput"
+                android:nextFocusRight="@+id/passwordInput"
+                android:nextFocusUp="@+id/passwordInput"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                style="@style/RoboEditViewTheme25sp_robotobold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginStart="45dp"
+                android:hint="@string/password"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/check_box_login_remember"
+                android:nextFocusForward="@+id/check_box_login_remember"
+                android:nextFocusLeft="@+id/check_box_login_remember"
+                android:nextFocusRight="@+id/check_box_login_remember"
+                android:nextFocusUp="@+id/check_box_login_remember"
+                android:singleLine="true" />
+            <!--android:inputType="textPassword" />-->
+
+            <CheckBox
+                android:id="@+id/check_box_login_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:checked="true"
+                android:nextFocusDown="@+id/buttonLogin"
+                android:nextFocusForward="@+id/buttonLogin"
+                android:nextFocusLeft="@+id/buttonLogin"
+                android:nextFocusRight="@+id/buttonLogin"
+                android:nextFocusUp="@+id/buttonLogin"
+                android:text="@string/check_box_remember_login"
+                android:textColor="@color/colorAccent" />
+
+            <!--<Button-->
+            <!--android:id="@+id/buttonLogin"-->
+            <!--style="@style/RoboButtonTheme"-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="62dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@drawable/buttonshape"-->
+            <!--android:text="@string/login_button" />-->
+            <com.gpstracker.unicornsystems.eu.gpstracker.CustomTextView
+                android:id="@+id/buttonLogin"
+                style="@style/RoboButtonTheme"
+                android:layout_width="250dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonshape"
+                android:gravity="center"
+                android:text="@string/login_button"
+                app:shadowColors="@color/button_shadow_color_green_selector"
+
+
+                />
+
+            <!--<com.client.ui.textviews.CustomTextView-->
+            <!--xmlns:client="http://schemas.android.com/apk/res/com.client"-->
+            <!--android:id="@+id/join_text"-->
+            <!--android:shadowDx="1"-->
+            <!--android:shadowDy="1"-->
+            <!--android:shadowRadius="1"-->
+            <!--client:shadowColors="@color/button_shadow_color_green_selector"/>-->
+
+            <com.gpstracker.unicornsystems.eu.gpstracker.CustomTextView
+                android:id="@+id/buttonRegistration"
+                style="@style/RoboButtonTheme"
+                android:layout_width="250dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/buttonshape"
+                android:gravity="center"
+                android:text="@string/registraiton_button"
+                app:shadowColors="@color/button_shadow_color_green_selector" />
+
+            <!--FB login-->
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/buttonFBLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" />
+
+
+            <!--logo-->
+            <!--<ImageView-->
+            <!--android:id="@+id/imgLogo"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@drawable/run"-->
+            <!---->
+            <!--/>-->
+
+
+            <RelativeLayout
+                android:id="@+id/google_singing_layourt"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <!--android:background="@color/blue_grey_100"-->
+
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="visible"
+                    tools:visibility="gone"
+
+                    />
+                <!--android:textColor="@android:color/black"-->
+
+
+                <!--Google plus login-->
+                <LinearLayout
+                    android:id="@+id/sign_out_and_disconnect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <Button
+                        android:id="@+id/sign_out_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sign_out"
+
+                        />
+                    <!--android:theme="@style/ThemeOverlay.MyDarkButton"-->
+
+                    <Button
+                        android:id="@+id/disconnect_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/disconnect" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imgLogo"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@drawable/run"-->
+            <!---->
+            <!--/>-->
+            <EditText
+                android:id="@+id/loginNameInput"
+                style="@style/RoboEditViewTheme25sp_robotobold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="80dp"
+                android:hint="@string/login_name"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/emailInput"
+                android:nextFocusForward="@+id/emailInput"
+                android:nextFocusLeft="@+id/emailInput"
+                android:nextFocusRight="@+id/emailInput"
+                android:nextFocusUp="@+id/emailInput"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                style="@style/RoboEditViewTheme25sp_robotobold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginStart="45dp"
+                android:hint="@string/email"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/passwordInput"
+                android:nextFocusForward="@+id/passwordInput"
+                android:nextFocusLeft="@+id/passwordInput"
+                android:nextFocusRight="@+id/passwordInput"
+                android:nextFocusUp="@+id/passwordInput"
+                android:singleLine="true" />
+
+
+            <EditText
+                android:id="@+id/passwordInput"
+                style="@style/RoboEditViewTheme25sp_robotobold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginStart="45dp"
+                android:hint="@string/password"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/passwordInputDuplo"
+                android:nextFocusForward="@+id/passwordInputDuplo"
+                android:nextFocusLeft="@+id/passwordInputDuplo"
+                android:nextFocusRight="@+id/passwordInputDuplo"
+                android:nextFocusUp="@+id/passwordInputDuplo"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/passwordInputDuplo"
+                style="@style/RoboEditViewTheme25sp_robotobold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginStart="45dp"
+                android:hint="@string/password_duplo"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/buttonRegistration"
+                android:nextFocusForward="@+id/buttonRegistration"
+                android:nextFocusLeft="@+id/buttonRegistration"
+                android:nextFocusRight="@+id/buttonRegistration"
+                android:nextFocusUp="@+id/buttonRegistration"
+                android:singleLine="true" />
+
+            <!--<CheckBox-->
+            <!--android:id="@+id/check_box_login_remember"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:checked="false"-->
+            <!--android:text="@string/check_box_remember_login"-->
+            <!--android:textColor="@color/colorAccent" />-->
+
+
+            <com.gpstracker.unicornsystems.eu.gpstracker.CustomTextView
+                android:id="@+id/buttonRegistration"
+                style="@style/RoboButtonTheme"
+                android:layout_width="250dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/buttonshape"
+                android:gravity="center"
+                android:text="@string/registraiton_button"
+                app:shadowColors="@color/button_shadow_color_green_selector" />
+
+            <com.gpstracker.unicornsystems.eu.gpstracker.CustomTextView
+                android:id="@+id/go_back"
+                style="@style/RoboButtonTheme"
+                android:layout_width="250dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/buttonshape"
+                android:gravity="center"
+                android:onClick="go_back"
+                android:text="@string/go_back"
+                app:shadowColors="@color/button_shadow_color_green_selector" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

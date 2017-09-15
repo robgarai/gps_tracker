@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF5722</color>
+
+    <color name="blue_Unicorn">#002882</color>
+    <color name="red_Unicorn">#be1428</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#0a3f51b5</color>
+    <color name="green">#00ff00</color>
+    <color name="greenFAB">#3fff3f</color>
+    <color name="lime">#CDDC39</color>
+    <color name="blue">#0000ff</color>
+    <color name="blue_accent">#303F9F</color>
+    <color name="yellow">#ffff00</color>
+    <color name="orange">#ff7f00</color>
+    <color name="orange_accent">#FF5722</color>
+    <color name="red">#ff0000</color>
+    <color name="red1">#b50a01</color>
+    <color name="red2">#900801</color>
+    <color name="red3">#7d0701</color>
+    <color name="red4">#540500</color>
+
+    <color name="unicornRed">#be1428</color>
+    <color name="unicornBlue">#002882</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <color name="blue_grey_100">#9fcfe6</color>
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="blue_grey_600">#546E7A</color>
+    <color name="blue_grey_700">#455A64</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_900">#263238</color>
+
+    <color name="transparent">#00000000</color>
+
+</resources>

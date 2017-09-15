@@ -1,0 +1,57 @@
+{
+  "project_info": {
+    "project_number": "864629089036",
+    "firebase_url": "https://gpstracker-646ed.firebaseio.com",
+    "project_id": "gpstracker-646ed",
+    "storage_bucket": "gpstracker-646ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864629089036:android:d5ba6c67cc7625e1",
+        "android_client_info": {
+          "package_name": "com.gpstracker.unicornsystems.eu.gpstracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864629089036-vv20ph64bi32su0pud6jg6lnltfqlsu1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gpstracker.unicornsystems.eu.gpstracker",
+            "certificate_hash": "F8E0DF086FCAD406C41B4F444EC9CF851582729C"
+          }
+        },
+        {
+          "client_id": "864629089036-lg4be1bbho4g5v2r88m24f3euqdmqnvv.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "864629089036-ngnrillsur63bnrm4loikb5qhmtvt3sr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVEx8KgrywrSLGQauAX5YNsDgOV4z9D-Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-84108518-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,164 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue_accent</item>
+        <item name="colorPrimaryDark">@color/blue_accent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/blue_accent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+    </style>
+
+    <!--no action bar for specific activities-->
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <!-- Base application theme. this vas used in trying to fing how to change the toolbar color. it was not useful and it is not used anymore -->
+
+    <style name="AppTheme2" parent="@android:style/Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+    </style>
+
+
+    <!-- Toolbar theme. -->
+
+
+    <style name="CustomActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <!-- Customize your toolbar here. -->
+        <item name="android:titleTextStyle">@style/CustomTextColor</item>
+    </style>
+
+
+    <style name="CustomTextColor" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <!-- Customize your toolbar here. -->
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!--end of toolbar settings color change trials-->
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/blue_accent</item>
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_accent</item>
+
+    </style>
+
+
+    <!--goodle plus singin-->
+    <!-- Activity with no Title -->
+    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/blue_accent</item>
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/blue_accent</item>
+
+        <item name="android:textColor">@color/blue_accent</item>
+
+
+    </style>
+
+    <!-- Robo Buttons -->
+    <style name="RoboButtonTheme">
+        <!--<item name="android:background">@color/button_background_color_selector</item>-->
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">7</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+
+    <!-- Robo TextView 14sp -->
+    <style name="RoboTextViewTheme14sp_robotolightitalic">
+        <item name="android:shadowColor">@color/lime</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <!-- Robo TextView 20sp -->
+    <style name="RoboTextViewTheme20sp_robotolightitalic">
+        <item name="android:shadowColor">@color/lime</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@color/reside_menu_text_color_selector</item>
+
+    </style>
+
+    <!-- Robo TextView 24sp -->
+    <style name="RoboTextViewTheme24sp_robotobold">
+        <item name="android:shadowColor">@color/lime</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">7</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <!-- Robo EditView 25sp -->
+    <style name="RoboEditViewTheme25sp_robotobold">
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <!-- Robo EditView 25sp user name in menu-->
+    <style name="RoboTextViewTheme25sp_usermenu_robotolightitalic">
+        <item name="android:shadowColor">@color/lime</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:typeface">serif</item>
+
+    </style>
+
+
+    <!--<style name="Theme.Transparent" parent="android:Theme">-->
+    <!--<item name="android:windowIsTranslucent">false</item>-->
+    <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    <!--<item name="android:windowContentOverlay">@null</item>-->
+    <!--<item name="android:windowNoTitle">true</item>-->
+    <!--<item name="android:windowIsFloating">false</item>-->
+    <!--<item name="android:backgroundDimEnabled">false</item>-->
+    <!--</style>-->
+</resources>

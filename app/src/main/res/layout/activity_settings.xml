@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_currentgoal_in_km"
+            style="@style/RoboEditViewTheme25sp_robotobold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/text_currentgoal_in_km"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView_current_goal_numberOfKm"
+            style="@style/RoboEditViewTheme25sp_robotobold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/textView_connectionInfo"
+            style="@style/RoboEditViewTheme25sp_robotobold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            tools:text=""
+            android:textSize="15sp"
+            android:maxLines="2"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView__add_number_of_km"-->
+        <!--style="@style/RoboEditViewTheme25sp_robotobold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="@string/text_add_number_of_km"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginBottom="10dp" />-->
+
+        <EditText
+            android:id="@+id/editText_set_goal_numberOfKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:hint="@string/text_add_number_of_km"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/colorPrimary" />
+
+        <com.gpstracker.CustomTextView
+            android:id="@+id/button_setkm"
+
+            style="@style/RoboButtonTheme"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="0"
+            android:background="@drawable/buttonshape"
+            android:gravity="center"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/set_km"
+            app:shadowColors="@color/button_shadow_color_green_selector" />
+
+        <com.gpstracker.CustomTextView
+            android:id="@+id/go_back"
+            style="@style/RoboButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/buttonshape"
+            android:gravity="center"
+            android:text="@string/go_back"
+            app:shadowColors="@color/button_shadow_color_green_selector" />
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
